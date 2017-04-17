@@ -10,8 +10,6 @@ t[target == 'versicolor'] = 2
 t[target == 'virginica'] = 3
 
 from sklearn.gaussian_process import GaussianProcessClassifier
-#from sklearn.neighbors import KNeighborsClassifier
-#from sklearn.ensemble import AdaBoostClassifier
 classifier = GaussianProcessClassifier()
 classifier.fit(data,t) # training on the iris dataset
 
